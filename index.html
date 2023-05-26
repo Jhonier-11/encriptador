@@ -4,42 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="shortcut icon" href="Resources/Logo.svg" type="image/x-icon">
     <title>Alura-Oracle One</title>
   </head>
   <body>
+    <header>
+        <div class="logo">
+            <a href="https://www.aluracursos.com/"><img src="Resources/Logo.svg" alt=""></a>
+        </div>
+    </header>
+    <main >
+      <div class="TextBox card">
+          <div class="">
+              <textarea name="" id="entrada" placeholder="Ingrese el texto aquí"></textarea>
+          </div>
+          <div class="">
+              <img src="Resources/Frame 1.svg" alt="">
+          </div>
+          <div class="contBotones">
+              <button class="btnEncriptar" id="encriptado">Encriptar</button>
+              <button class="btnDesencriptar" id="desencriptado">Desencriptar</button>
+          </div>
+      </div>
+      <div id="cardRespuesta" class="cardRespuesta card">
+          <div id="respuesta">
+              <p id="salida"></p>
+          </div>
+          <div class="contenedorMuñeco" id="cardmunheco">
+              <img class="muñeco" id="munheco" src="Resources/Muñeco.png" alt="">
+              <span class="text1" id="text1">Ningún mensaje fue encontrado</span>
+              <span class="text2" id="text2">Ingresa el texto que deseas encriptar o desencriptar.</span>
+              <!-- <img src="Resources/Textocard.png" alt="" class="txtcard"> -->
+          </div>
+          <div class="btns">            
+              <button id="btncopiar" class="btncopiar">Copiar</button>
+          </div>
+      </div>
+  </main>
 
-    <div class="main">
-      <div class="logo">
-        <a href="https://www.aluracursos.com/"><img src="Resources/Logo.svg" alt="" class="imgLogo"></a>
-    </div>
-    <div class="TextBox">
-        <div>
-            <textarea name="" id="text_to" placeholder="Ingrese el texto aquí"></textarea>
-        </div>
-        <div>
-            <img src="Resources/Vector.svg" alt="">
-            <span>Solo letras minúsculas y sin acentos</span>
-        </div>
-        <div class="">
-            <button class="" id="encrypt">Encriptar</button>
-            <button class="" id="decrypt">Desencriptar</button>
-        </div>
-    </div>
-    <div id="caja2" class="caja2">
-        <div id="caja_text">
-            <p id="textencrypt"></p>
-        </div>
-        <div class="no_content fade-in" id="no_content">
-            <img class="vector3" id="vector3" src="img/Vector3.png" alt="">
-            <span class="text1" id="text1">Ningún mensaje fue encontrado</span>
-            <span class="text2" id="text2">Ingresa el texto que deseas encriptar o desencriptar.</span>
-        </div>
-
-        <button id="copybutton" class="copybutton">Copiar</button>
-    </div>
-    </div>
-
-    <script src="encripted.js"></script>
+    <script src="js/encripted.js"></script>
   </body>
 </html>

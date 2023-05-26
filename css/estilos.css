@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+body {
+  font-family: "Inter";
+  font-style: normal;
+  margin: 0 auto;
+  background: #f3f5fc;
+  height: 100vh;
+}
+.logo {
+  display: flex;
+  height: 48px;
+  width: 120px;
+  padding: 20px 0 ;
+  justify-content: center;
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  background: #f3f5fc;
+  resize: none;
+  width: 350px;
+  /* height: 390px; */
+  border: none;
+  outline: none;
+  font-weight: 400;
+  font-size: 4vh;
+  line-height: 150%;
+  color: #0a3871;
+  margin-left: 16px;
+}
+textarea::placeholder {
+  color: #0a3871;
+}
+
+.cardRespuesta{
+    display: grid;
+    grid-template-columns:repeat(3,1fr) ;
+    grid-template-rows: repeat(3,minmax(200px, auto));
+}
+#respuesta{
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+}
+.cardmunheco{
+    
+}
+.btns{
+    /* display: none; */
+}
