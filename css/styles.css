@@ -162,6 +162,9 @@ textarea::placeholder {
 }
 
 @media screen and (max-width: 768px) {
+  body{
+    width: auto;
+  }
   main{
     flex-direction: column;
   }
@@ -184,7 +187,10 @@ textarea::placeholder {
 }
 
 @media screen and (min-width:768px) and (max-width:1023px) {
-  main{
+  .body {
+    width: auto;
+  }
+    main{
     flex-wrap: wrap;
     flex-direction: column;
   }
